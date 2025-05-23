@@ -14,5 +14,6 @@ func init() {
 func main() {
 	router := gin.Default()
 	router.POST("/register",controllers.Register)
+	router.POST("/login",controllers.Login)
 	router.Run()
 }
